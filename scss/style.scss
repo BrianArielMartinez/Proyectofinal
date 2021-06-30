@@ -1,0 +1,161 @@
+@use "sass:map";
+@import "components/header";
+@import "components/footer";
+@import "components/content";
+@import "components/mediaquery";
+@import "base/variables";
+@import "base/mixins";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ESTILOS GENERALES */
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: map.get($colores, "blanco");
+    font-family: $fuenteprincipal;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0.2em 0 0.2em 0;
+    font-weight: normal;
+}
+
+h2 {
+    color: map.get($colores, "blanco");
+    font-family: $fuenteprincipal;
+    text-transform: uppercase;
+    font-size: 9em;
+    font-weight: lighter;
+    margin: 0.2em 0 0.2em 0;
+}
+
+h3 {
+    font-size: 64px;
+    font-family: "Ortica";
+    font-weight: lighter;
+    margin: 0.2em 0 0.2em 0;
+}
+
+h4 {
+    font-size: 32px;
+    font-family: "Ortica";
+    font-weight: lighter;
+    color: turquoise;
+    padding-bottom: 10px;
+}
+
+p {
+    color: map.get($colores, "blanco");
+    font-family: $fuenteprincipal;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+input[type="text"],
+[type="email"] {
+    font-family: $fuenteprincipal;
+    width: 75%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 32px;
+    display: block;
+}
+
+a {
+    color: map.get($colores, "verde");
+    text-decoration: none;
+    font-family: $fuenteprincipal;
+}
+
+textarea {
+    font-family: $fuenteprincipal;
+    width: 75%;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 32px;
+    resize: none;
+    margin: 20px 0;
+    display: block;
+}
+
+i {
+    padding-right: 10px;
+}
+
+hr {
+    display: none;
+}
+
+.background-1 {
+    background-image: url('../Images/fondo-pagina.jpg') !important;
+    padding: 32px 32px 64px 32px;
+}
+
+.boton {
+    background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7 51%, #1CD8D2 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+    &:hover {
+        border-radius: 30px;
+        background-position: right center;
+    }
+}
+
+.span-mayus {
+    @extend %spans;
+    text-transform: uppercase;
+    margin: 50px 0 15px 0;
+}
+
+.span-min {
+    @extend %spans;
+}
+
+.arrow-icon {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 5em;
+    text-decoration: none;
+    align-items: flex-start;
+    display: flex;
+    padding-top: 4em;
+    transition: all .2s ease-in-out;
+    &:hover a {
+        transform: scale(1.5);
+        color: white;
+        transition-duration: 1s;
+    }
+}
+
+
+/* FUENTES */
+
+@font-face {
+    font-family: $fuenteprincipal;
+    src: url('../Fuentes/HelveticaNowDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Ortica";
+    src: url('../Fuentes/Ortica-Light.otf') format('opentype');
+}

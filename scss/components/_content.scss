@@ -1,0 +1,189 @@
+@use "sass:map";
+@import "../base/variables";
+
+/* Content */
+
+main {
+    .background-2-white {
+        background-image: url('../Images/background-white.jpg');
+        padding: 32px;
+        .ImgPorfolio {
+            article {
+                margin-bottom: 50px;
+            }
+            iframe {
+                width: 80%;
+                margin-right: 50px;
+                margin-top: 50px;
+            }
+            p {
+                width: 70%;
+            }
+        }
+    }
+    .background-3-black {
+        background-image: url('../Images/background-black.jpg');
+        padding: 32px;
+        color: map.get($colores, "blanco");
+        .grid-manif {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: flex-start;
+            align-items: flex-end;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        .grid-contac {
+            display: grid;
+            grid-template-rows: 1f;
+        }
+        .servicios {
+            p {
+                width: 350px;
+            }
+        }
+        .grilla-servicios {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: "dis-graf branding " "ux-ui edit" "fotog ilus" " dis-web mot-graphic";
+            justify-items: start;
+            align-items: start;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            .grilla-1t-2t {
+                .dis-graf {
+                    grid-area: dis-graf;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+                .branding {
+                    grid-area: branding;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+                .ux-ui {
+                    grid-area: ux-ui;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+                .edit {
+                    grid-area: edit;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+                .fotografia {
+                    grid-area: fotografia;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+                .ilus {
+                    grid-area: ilus;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+                .dis-web {
+                    grid-area: ilus;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+                .mot-graphic {
+                    grid-area: ilus;
+                    display: flex;
+                    width: 100%;
+                    grid-column-gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+.section-1 {
+    padding-top: 6em;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+}
+
+.big-text {
+    flex-direction: column;
+    max-width: 75%;
+}
+
+.background-2-white p,
+.background-2-white h2 {
+    color: map.get($colores, "negro");
+}
+
+.grilla-tercios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+}
+
+.grilla-1t-2t {
+    display: flex;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+    justify-items: center;
+    grid-column-gap: 20px;
+}
+
+.grilla-2t-1t {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    align-items: stretch;
+    justify-items: center;
+}
+
+.icono-servicios {
+    font-size: 64px;
+    font-family: "Ortica";
+}
+
+.icono-servicios img {
+    width: 1em;
+    margin: 0.2em 0 0.2em 0;
+    padding-top: 0.2em;
+}
+
+button {
+    border: 0px;
+}
+
+.servicios>h2,
+.servicios>p,
+.servicios>h1 {
+    color: map.get($colores, "blanco");
+}
+
+.manifiesto>h2,
+.manifiesto>p,
+.manifiesto>h1 {
+    color: map.get($colores, "blanco");
+}
+
+.grid-manif .boton {
+    display: block;
+}

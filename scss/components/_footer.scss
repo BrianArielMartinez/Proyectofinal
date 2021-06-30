@@ -1,0 +1,67 @@
+@use "sass:map";
+@import "../base/variables";
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 32px !important;
+    .grilla-tercios {
+        .colum1 {
+            flex-direction: column;
+            justify-content: left;
+            padding-top: 16px;
+        }
+        .colum2 {
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 16px;
+        }
+        .redes-sociales {
+            font-size: 50px;
+            text-decoration: none;
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column;
+            padding-top: 16px;
+            .icons-footer {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+        }
+        .copy {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 75%;
+        }
+    }
+    .p-footer {
+        font-family: "Ortica";
+        font-size: 32px;
+        color: map.get($colores, "verde");
+    }
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 32px 32px 0;
+    p {
+        padding-left: 32px;
+    }
+    .arrow-icon-footer {
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 2em;
+        text-decoration: none;
+        align-items: flex-end;
+        display: flex;
+        width: 25%;
+    }
+}

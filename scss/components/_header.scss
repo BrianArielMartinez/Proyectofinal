@@ -1,0 +1,71 @@
+@use "sass:map";
+@import "../base/variables";
+
+/* HEADER */
+
+.background-1 {
+    background-image: url('../Images/fondo-pagina.jpg') !important;
+    padding: 32px 32px 64px 32px;
+}
+
+.logo {
+    width: 200px !important;
+    flex-direction: row;
+    justify-content: flex-start;
+    transition: transform 2s;
+    &:hover {
+        transform: rotate(1080deg);
+    }
+}
+
+header {
+    nav {
+        margin: 20px 0 0 0;
+        font-family: $fuenteprincipal;
+        font-size: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: map.get($colores, "blanco") !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            li {
+                color: map.get($colores, "blanco");
+            }
+            a {
+                color: map.get($colores, "blanco")!important;
+                font-family: $fuenteprincipal;
+                &:hover {
+                    color: map.get($colores, "verde") !important;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .destacado1 {
+        font-size: 2em;
+        text-transform: uppercase;
+        display: block;
+        line-height: normal;
+    }
+    .destacado2 {
+        font-size: 3.5em;
+        margin: 0;
+        text-transform: uppercase;
+        color: map.get($colores, "verde");
+        width: 100%;
+        line-height: normal;
+        display: flex;
+        font-family: $fuenteprincipal;
+    }
+    .FotoInicio {
+        max-width: 25%;
+        width: 100%;
+        margin-top: 35px;
+        justify-content: flex-end;
+        img {
+            width: 280px;
+        }
+    }
+}
