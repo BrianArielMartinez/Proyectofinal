@@ -27,7 +27,7 @@ main {
         color: map.get($colores, "blanco");
         .grid-manif {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             justify-items: flex-start;
             align-items: flex-end;
             grid-column-gap: 20px;
@@ -43,11 +43,6 @@ main {
             }
         }
         .grilla-servicios {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-areas: "dis-graf branding " "ux-ui edit" "fotog ilus" " dis-web mot-graphic";
-            justify-items: start;
-            align-items: start;
             grid-column-gap: 20px;
             grid-row-gap: 20px;
             .grilla-1t-2t {

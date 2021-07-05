@@ -2,7 +2,6 @@
 @import "components/header";
 @import "components/footer";
 @import "components/content";
-@import "components/mediaquery";
 @import "base/variables";
 @import "base/mixins";
 * {
@@ -138,13 +137,16 @@ hr {
     text-decoration: none;
     align-items: flex-start;
     display: flex;
-    padding-top: 4em;
     transition: all .2s ease-in-out;
     &:hover a {
         transform: scale(1.5);
         color: white;
-        transition-duration: 1s;
+        transition-duration: 2s;
     }
+}
+
+.container {
+    margin-left: 0;
 }
 
 
@@ -159,3 +161,5 @@ hr {
     font-family: "Ortica";
     src: url('../Fuentes/Ortica-Light.otf') format('opentype');
 }
+
+@import "components/mediaquery";

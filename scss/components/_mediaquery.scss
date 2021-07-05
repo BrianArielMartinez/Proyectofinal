@@ -1,35 +1,90 @@
 /* Media Query */
 
 
-/* Tablet */
+/* L a XL */
 
-@media only screen and (min-width: 680px) and (max-width: 1030px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-        margin: 0;
-    }
-    nav a {
-        padding-left: 0;
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
+@media only screen and (min-width: 992px) and (max-width: 1399px) {
+    header {
+        nav {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            margin: 0;
+        }
+        nav a {
+            padding-left: 0;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .FotoInicio {
+            margin-top: 35px;
+        }
+        .destacado2 {
+            font-size: 3em;
+        }
     }
     .section-1 {
         padding-top: 6em;
     }
-    .FotoInicio {
-        margin-top: 35px;
+    h2 {
+        font-size: 3em;
     }
-    .FotoInicio img {
-        width: 150px;
+    .grilla-1t-2t {
+        grid-template-columns: auto;
+        grid-row-gap: 25px;
     }
-    .destacado2 {
-        font-size: 5em;
+    .servicios.grilla-tercios {
+        grid-template-columns: 1fr 1fr 0fr;
+    }
+    .servicios.grilla-servicios {
+        grid-template-columns: auto;
+        grid-template-areas: "dis-graf" "branding " "ux-ui" "edit" "fotog" "ilus" " dis-web" "mot-graphic";
+    }
+    main {
+        .background-3-black {
+            .grid-manif {
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
+
+
+/* Tablet */
+
+@media only screen and (min-width: 680px) and (max-width: 991px) {
+    header {
+        nav {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            margin: 0;
+        }
+        nav a {
+            padding-left: 0;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .FotoInicio {
+            margin-top: 35px;
+        }
+        .FotoInicio img {
+            width: 150px;
+        }
+        .destacado2 {
+            font-size: 2.5em;
+        }
+    }
+    .section-1 {
+        padding-top: 6em;
     }
     h2 {
         font-size: 6em;
@@ -45,8 +100,12 @@
         grid-template-columns: auto;
         grid-template-areas: "dis-graf" "branding " "ux-ui" "edit" "fotog" "ilus" " dis-web" "mot-graphic";
     }
-    .grid-manif {
-        grid-template-columns: auto;
+    main {
+        .background-3-black {
+            .grid-manif {
+                grid-template-columns: auto;
+            }
+        }
     }
 }
 
@@ -57,23 +116,37 @@
 /* Mobile */
 
 @media only screen and (max-width: 679px) {
-    nav {
-        display: flex;
-        flex-direction: column;
-        font-size: 20px;
-        margin: 0;
-    }
-    nav a {
-        padding-left: 0;
-    }
-    .navbar-nav {
-        align-items: flex-start;
-    }
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 20px;
+    header {
+        nav {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+            margin: 0;
+        }
+        nav a {
+            padding-left: 0;
+        }
+        .navbar-nav {
+            align-items: flex-start;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .FotoInicio {
+            margin-top: 35px;
+        }
+        .FotoInicio img {
+            width: 150px;
+        }
+        .destacado1 {
+            font-size: 24px;
+        }
+        .destacado2 {
+            font-size: 1.2em;
+        }
     }
     .section-1 {
         padding-top: 3em;
@@ -81,18 +154,6 @@
     }
     .big-text {
         max-width: 100%;
-    }
-    .FotoInicio {
-        margin-top: 35px;
-    }
-    .FotoInicio img {
-        width: 150px;
-    }
-    .destacado1 {
-        font-size: 24px;
-    }
-    .destacado2 {
-        font-size: 2.5em;
     }
     .span-mayus {
         width: 100%;
@@ -120,7 +181,26 @@
     footer .grilla-tercios {
         grid-template-columns: auto;
     }
-    .grid-manif {
-        grid-template-columns: auto;
+    main {
+        .background-3-black {
+            .grid-manif {
+                grid-template-columns: auto;
+            }
+        }
+    }
+    .boton {
+        padding: 7px 22px;
+        border-radius: 10px;
+        display: inline-block;
+        &:hover {
+            border-radius: 30px;
+        }
+    }
+    input[type=text],
+    [type=email] {
+        font-size: 20px;
+    }
+    textarea {
+        font-size: 20px;
     }
 }
