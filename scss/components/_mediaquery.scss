@@ -125,15 +125,6 @@
             font-size: 1.2em;
         }
     }
-    .form {
-        input[type="text"],
-        [type="email"] {
-            width: 100%;
-        }
-        .textarea {
-            width: 100%;
-        }
-    }
     .section-1 {
         padding-top: 3em;
         flex-direction: column;
@@ -170,10 +161,12 @@
         }
     }
     input[type=text],
-    [type=email] {
-        font-size: 20px;
+    input[type=email] {
+        font-size: 20px !important;
+        width: 100% !important;
     }
-    textarea {
-        font-size: 20px;
+    .textarea {
+        font-size: 20px !important;
+        width: 100% !important;
     }
 }

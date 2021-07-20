@@ -10,10 +10,6 @@
 }
 
 /* HEADER */
-.background-1 {
-  background-image: url("../Images/fondo-pagina.jpg");
-}
-
 header {
   background-color: black !important;
 }
@@ -188,37 +184,45 @@ main .background-3-black .grilla-servicios {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
 }
-
-.background-2-white p,
-.background-2-white h2 {
+main .form input[type=text],
+main .form [type=email] {
+  font-family: "HelveticaNow";
+  width: 75%;
+  height: 100px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 32px;
+  display: block;
+}
+main .form .textarea {
+  font-family: "HelveticaNow";
+  width: 75%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 32px;
+  resize: none;
+  margin: 20px 0;
+  display: block;
+}
+main .background-2-white p,
+main .background-2-white h2 {
   color: #000000;
 }
-
-.grilla-tercios {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: start;
-  align-items: start;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-
-.navbar-nav {
+main .navbar-nav {
   align-items: flex-end;
 }
-
-.dropdown-item:hover {
+main .dropdown-item:hover {
   background-color: transparent;
 }
-
-.icono-servicios {
+main .icono-servicios {
   font-size: 64px;
   font-family: "Ortica";
   padding-bottom: 0.2em;
   border-bottom: solid 1px darkslategray;
 }
-
-.tarjeta {
+main .tarjeta {
   padding: 30px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -227,8 +231,7 @@ main .background-3-black .grilla-servicios {
   min-height: 30em;
   min-width: 21em;
 }
-
-.icono-servicios img {
+main .icono-servicios img {
   width: 1.15em;
   height: 1.1em;
   margin: 0.2em 0 0.2em 0;
@@ -332,29 +335,6 @@ p {
   margin-bottom: 0;
 }
 
-.form input[type=text],
-.form [type=email] {
-  font-family: "HelveticaNow";
-  width: 75%;
-  height: 100px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid white;
-  font-size: 32px;
-  display: block;
-}
-.form .textarea {
-  font-family: "HelveticaNow";
-  width: 75%;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid white;
-  font-size: 32px;
-  resize: none;
-  margin: 20px 0;
-  display: block;
-}
-
 a {
   color: aquamarine;
   text-decoration: none;
@@ -371,6 +351,19 @@ hr {
 
 .background-1 {
   background-image: url("../Images/background-black.jpg");
+}
+
+.background-2 {
+  background-image: url("../Images/fondo-pagina.jpg");
+}
+
+.grilla-tercios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: start;
+  align-items: start;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
 }
 
 .boton {
@@ -580,14 +573,6 @@ hr {
     font-size: 1.2em;
   }
 
-  .form input[type=text],
-.form [type=email] {
-    width: 100%;
-  }
-  .form .textarea {
-    width: 100%;
-  }
-
   .section-1 {
     padding-top: 3em;
     flex-direction: column;
@@ -633,12 +618,14 @@ hr {
   }
 
   input[type=text],
-[type=email] {
-    font-size: 20px;
+input[type=email] {
+    font-size: 20px !important;
+    width: 100% !important;
   }
 
-  textarea {
-    font-size: 20px;
+  .textarea {
+    font-size: 20px !important;
+    width: 100% !important;
   }
 }
 

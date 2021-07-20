@@ -49,31 +49,6 @@ p {
     margin-bottom: 0;
 }
 
-.form {
-    input[type="text"],
-    [type="email"] {
-        font-family: $fuenteprincipal;
-        width: 75%;
-        height: 100px;
-        background-color: transparent;
-        border: none;
-        border-bottom: 2px solid white;
-        font-size: 32px;
-        display: block;
-    }
-    .textarea {
-        font-family: $fuenteprincipal;
-        width: 75%;
-        background-color: transparent;
-        border: none;
-        border-bottom: 2px solid white;
-        font-size: 32px;
-        resize: none;
-        margin: 20px 0;
-        display: block;
-    }
-}
-
 a {
     color: map.get($colores, "verde");
     text-decoration: none;
@@ -90,6 +65,19 @@ hr {
 
 .background-1 {
     background-image: url("../Images/background-black.jpg");
+}
+
+.background-2 {
+    background-image: url("../Images/fondo-pagina.jpg");
+}
+
+.grilla-tercios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
 }
 
 .boton {

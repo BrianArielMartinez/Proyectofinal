@@ -36,51 +36,60 @@ main {
             grid-row-gap: 20px;
         }
     }
-}
-
-.background-2-white p,
-.background-2-white h2 {
-    color: map.get($colores, "negro");
-}
-
-.grilla-tercios {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: start;
-    align-items: start;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-}
-
-.navbar-nav {
-    align-items: flex-end;
-}
-
-.dropdown-item:hover {
-    background-color: transparent;
-}
-
-.icono-servicios {
-    font-size: 64px;
-    font-family: "Ortica";
-    padding-bottom: 0.2em;
-    border-bottom: solid 1px darkslategray;
-}
-
-.tarjeta {
-    padding: 30px;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 15px;
-    min-height: 30em;
-    min-width: 21em;
-}
-
-.icono-servicios img {
-    width: 1.15em;
-    height: 1.1em;
-    margin: 0.2em 0 0.2em 0;
+    .form {
+        input[type="text"],
+        [type="email"] {
+            font-family: $fuenteprincipal;
+            width: 75%;
+            height: 100px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 32px;
+            display: block;
+        }
+        .textarea {
+            font-family: $fuenteprincipal;
+            width: 75%;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            font-size: 32px;
+            resize: none;
+            margin: 20px 0;
+            display: block;
+        }
+    }
+    .background-2-white p,
+    .background-2-white h2 {
+        color: map.get($colores, "negro");
+    }
+    .navbar-nav {
+        align-items: flex-end;
+    }
+    .dropdown-item:hover {
+        background-color: transparent;
+    }
+    .icono-servicios {
+        font-size: 64px;
+        font-family: "Ortica";
+        padding-bottom: 0.2em;
+        border-bottom: solid 1px darkslategray;
+    }
+    .tarjeta {
+        padding: 30px;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 15px;
+        min-height: 30em;
+        min-width: 21em;
+    }
+    .icono-servicios img {
+        width: 1.15em;
+        height: 1.1em;
+        margin: 0.2em 0 0.2em 0;
+    }
 }
 
 button {
