@@ -10,6 +10,11 @@
             flex-direction: column;
             font-size: 20px;
             margin: 0;
+            .navbar-brand {
+                img {
+                    width: 120px;
+                }
+            }
         }
         nav a {
             padding-left: 0;
@@ -22,34 +27,14 @@
         }
         .FotoInicio {
             margin-top: 35px;
+            text-align: left !important;
         }
         .destacado2 {
             font-size: 3em;
         }
     }
-    .section-1 {
-        padding-top: 6em;
-    }
     h2 {
         font-size: 3em;
-    }
-    .grilla-1t-2t {
-        grid-template-columns: auto;
-        grid-row-gap: 25px;
-    }
-    .servicios.grilla-tercios {
-        grid-template-columns: 1fr 1fr 0fr;
-    }
-    .servicios.grilla-servicios {
-        grid-template-columns: auto;
-        grid-template-areas: "dis-graf" "branding " "ux-ui" "edit" "fotog" "ilus" " dis-web" "mot-graphic";
-    }
-    main {
-        .background-3-black {
-            .grid-manif {
-                grid-template-columns: auto;
-            }
-        }
     }
 }
 
@@ -63,6 +48,11 @@
             flex-direction: column;
             font-size: 20px;
             margin: 0;
+            .navbar-brand {
+                img {
+                    width: 120px;
+                }
+            }
         }
         nav a {
             padding-left: 0;
@@ -75,6 +65,7 @@
         }
         .FotoInicio {
             margin-top: 35px;
+            text-align: left !important;
         }
         .FotoInicio img {
             width: 150px;
@@ -83,29 +74,8 @@
             font-size: 2.5em;
         }
     }
-    .section-1 {
-        padding-top: 6em;
-    }
     h2 {
         font-size: 6em;
-    }
-    .grilla-1t-2t {
-        grid-template-columns: auto;
-        grid-row-gap: 25px;
-    }
-    .servicios.grilla-tercios {
-        grid-template-columns: 1fr 1fr 0fr;
-    }
-    .servicios.grilla-servicios {
-        grid-template-columns: auto;
-        grid-template-areas: "dis-graf" "branding " "ux-ui" "edit" "fotog" "ilus" " dis-web" "mot-graphic";
-    }
-    main {
-        .background-3-black {
-            .grid-manif {
-                grid-template-columns: auto;
-            }
-        }
     }
 }
 
@@ -122,6 +92,13 @@
             flex-direction: column;
             font-size: 20px;
             margin: 0;
+            .navbar-brand {
+                a {
+                    img {
+                        width: 120px;
+                    }
+                }
+            }
         }
         nav a {
             padding-left: 0;
@@ -148,6 +125,15 @@
             font-size: 1.2em;
         }
     }
+    .form {
+        input[type="text"],
+        [type="email"] {
+            width: 100%;
+        }
+        .textarea {
+            width: 100%;
+        }
+    }
     .section-1 {
         padding-top: 3em;
         flex-direction: column;
@@ -159,6 +145,9 @@
         width: 100%;
         font-size: 1.5em;
     }
+    .tarjeta {
+        min-width: 18em;
+    }
     .span-min {
         width: 100%;
         font-size: 1.5em;
@@ -166,27 +155,11 @@
     h2 {
         font-size: 3em;
     }
-    .grilla-2t-1t {
-        grid-template-columns: auto;
-        grid-row-gap: 25px;
-    }
-    .grilla-1t-2t {
-        grid-template-columns: auto;
-        grid-row-gap: 25px;
-    }
-    .servicios.grilla-servicios {
-        grid-template-columns: auto;
-        grid-template-areas: "dis-graf" "branding " "ux-ui" "edit" "fotog" "ilus" " dis-web" "mot-graphic";
+    h3 {
+        font-size: 48px;
     }
     footer .grilla-tercios {
         grid-template-columns: auto;
-    }
-    main {
-        .background-3-black {
-            .grid-manif {
-                grid-template-columns: auto;
-            }
-        }
     }
     .boton {
         padding: 7px 22px;

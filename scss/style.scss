@@ -42,14 +42,6 @@ h3 {
     margin: 0.2em 0 0.2em 0;
 }
 
-h4 {
-    font-size: 32px;
-    font-family: "Ortica";
-    font-weight: lighter;
-    color: turquoise;
-    padding-bottom: 10px;
-}
-
 p {
     color: map.get($colores, "blanco");
     font-family: $fuenteprincipal;
@@ -57,35 +49,35 @@ p {
     margin-bottom: 0;
 }
 
-input[type="text"],
-[type="email"] {
-    font-family: $fuenteprincipal;
-    width: 75%;
-    height: 100px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid white;
-    font-size: 32px;
-    display: block;
+.form {
+    input[type="text"],
+    [type="email"] {
+        font-family: $fuenteprincipal;
+        width: 75%;
+        height: 100px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: 32px;
+        display: block;
+    }
+    .textarea {
+        font-family: $fuenteprincipal;
+        width: 75%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        font-size: 32px;
+        resize: none;
+        margin: 20px 0;
+        display: block;
+    }
 }
 
 a {
     color: map.get($colores, "verde");
     text-decoration: none;
     font-family: $fuenteprincipal;
-}
-
-textarea {
-    font-family: $fuenteprincipal;
-    width: 75%;
-    height: 100px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid white;
-    font-size: 32px;
-    resize: none;
-    margin: 20px 0;
-    display: block;
 }
 
 i {
@@ -97,8 +89,7 @@ hr {
 }
 
 .background-1 {
-    background-image: url('../Images/fondo-pagina.jpg') !important;
-    padding: 32px 32px 64px 32px;
+    background-image: url("../Images/background-black.jpg");
 }
 
 .boton {
@@ -123,30 +114,79 @@ hr {
 .span-mayus {
     @extend %spans;
     text-transform: uppercase;
+    font-size: 2em;
     margin: 50px 0 15px 0;
+}
+
+#loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 1500;
+}
+
+#loading-image {
+    z-index: 1501;
 }
 
 .span-min {
     @extend %spans;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.sobre-mi {
+    padding: 150px 0 50px 0;
+}
+
+.sobre-mi2 {
+    padding: 50px 0 150px 0;
+}
+
+.proyectos-nro {
+    display: block;
+    font-size: 32px;
+    font-family: "Ortica";
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
 }
 
 .arrow-icon {
     flex-direction: column;
-    justify-content: center;
-    font-size: 5em;
+    justify-content: flex-start;
     text-decoration: none;
-    align-items: flex-start;
+    align-items: flex-end;
     display: flex;
     transition: all .2s ease-in-out;
-    &:hover a {
-        transform: scale(1.5);
-        color: white;
-        transition-duration: 2s;
+    a {
+        img {
+            filter: invert(1);
+            width: 100px;
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: rotate(45deg);
+            }
+        }
     }
 }
 
 .container {
     margin-left: 0;
+    margin-top: 60px;
+    padding: 64px 0 64px 32px;
 }
 
 

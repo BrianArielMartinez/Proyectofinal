@@ -10,6 +10,7 @@ footer {
     flex-wrap: wrap;
     padding-bottom: 32px !important;
     .grilla-tercios {
+        padding: 0 32px;
         .colum1 {
             flex-direction: column;
             justify-content: left;
@@ -32,12 +33,6 @@ footer {
                 justify-content: flex-start;
             }
         }
-        .copy {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 75%;
-        }
     }
     .p-footer {
         font-family: "Ortica";
@@ -52,7 +47,8 @@ footer {
     justify-content: flex-start;
     align-items: flex-end;
     width: 100%;
-    padding-right: 32px;
+    word-spacing: 3px;
+    padding: 0 32px;
     p {
         padding-left: 0;
     }
