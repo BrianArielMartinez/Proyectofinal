@@ -423,7 +423,7 @@ i {
 .container {
   margin-left: 0;
   margin-top: 60px;
-  padding: 64px 0 64px 32px;
+  padding: 64px 32px;
 }
 
 /* FUENTES */
@@ -436,6 +436,11 @@ i {
   src: url("../Fuentes/Ortica-Light.otf") format("opentype");
 }
 /* Media Query */
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 100%;
+  }
+}
 /* L a XL */
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
   header nav {
