@@ -1,6 +1,5 @@
 /* Media Query */
 
-
 /* L a XL */
 
 @media only screen and (min-width: 992px) and (max-width: 1399px) {
@@ -37,7 +36,6 @@
         font-size: 3em;
     }
 }
-
 
 /* Tablet */
 
@@ -77,11 +75,12 @@
     h2 {
         font-size: 6em;
     }
+    .tarjeta {
+        min-width: 18em !important;
+    }
 }
 
-
 /* Media Query */
-
 
 /* Mobile */
 
@@ -137,7 +136,7 @@
         font-size: 1.5em;
     }
     .tarjeta {
-        min-width: 18em;
+        min-width: 18em  !important;
     }
     .span-min {
         width: 100%;
@@ -160,8 +159,8 @@
             border-radius: 30px;
         }
     }
-    input[type=text],
-    input[type=email] {
+    input[type="text"],
+    input[type="email"] {
         font-size: 20px !important;
         width: 100% !important;
     }

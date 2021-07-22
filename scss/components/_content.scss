@@ -1,11 +1,10 @@
 @use "sass:map";
-@import "../base/variables";
 
 /* Content */
 
 main {
     .background-2-white {
-        background-image: url('../Images/background-white.jpg');
+        background-image: url("../Images/background-white.jpg");
         padding: 32px;
         .ImgPorfolio {
             article {
@@ -18,7 +17,7 @@ main {
         }
     }
     .background-3-black {
-        background-image: url('../Images/background-black.jpg');
+        background-image: url("../Images/background-black.jpg");
         padding: 32px;
         color: map.get($colores, "blanco");
         .manif-img {
@@ -94,6 +93,11 @@ main {
 
 button {
     border: 0px;
+}
+
+//404
+.img-404 img {
+    width: 40%;
 }
 
 // ANIMACIONES

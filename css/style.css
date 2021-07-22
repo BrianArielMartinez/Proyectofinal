@@ -72,17 +72,6 @@ header .FotoInicio img {
   width: 280px;
 }
 
-/* Maps */
-/* Variable */
-/* Extend */
-.span-min, .span-mayus {
-  display: block;
-  font-size: 24px;
-  line-height: normal;
-  color: #f5f5f5;
-  font-family: "HelveticaNow";
-}
-
 /* FOOTER */
 footer {
   display: flex;
@@ -142,17 +131,6 @@ footer .p-footer {
   align-items: flex-end;
   display: flex;
   width: 25%;
-}
-
-/* Maps */
-/* Variable */
-/* Extend */
-.span-min, .span-mayus {
-  display: block;
-  font-size: 24px;
-  line-height: normal;
-  color: #f5f5f5;
-  font-family: "HelveticaNow";
 }
 
 /* Content */
@@ -241,6 +219,10 @@ button {
   border: 0px;
 }
 
+.img-404 img {
+  width: 40%;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -281,17 +263,6 @@ button {
     opacity: 1;
   }
 }
-/* Maps */
-/* Variable */
-/* Extend */
-.span-min, .span-mayus {
-  display: block;
-  font-size: 24px;
-  line-height: normal;
-  color: #f5f5f5;
-  font-family: "HelveticaNow";
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -345,10 +316,6 @@ i {
   padding-right: 10px;
 }
 
-hr {
-  display: none;
-}
-
 .background-1 {
   background-image: url("../Images/background-black.jpg");
 }
@@ -367,7 +334,7 @@ hr {
 }
 
 .boton {
-  background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7 51%, #1CD8D2 100%);
+  background-image: linear-gradient(to right, #1cd8d2 0%, #93edc7 51%, #1cd8d2 100%);
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
@@ -535,6 +502,10 @@ hr {
   h2 {
     font-size: 6em;
   }
+
+  .tarjeta {
+    min-width: 18em !important;
+  }
 }
 /* Media Query */
 /* Mobile */
@@ -588,7 +559,7 @@ hr {
   }
 
   .tarjeta {
-    min-width: 18em;
+    min-width: 18em !important;
   }
 
   .span-min {

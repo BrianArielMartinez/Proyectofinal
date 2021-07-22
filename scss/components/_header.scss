@@ -1,5 +1,4 @@
 @use "sass:map";
-@import "../base/variables";
 
 /* HEADER */
 
@@ -29,7 +28,7 @@ header {
                 color: map.get($colores, "blanco");
             }
             a {
-                color: map.get($colores, "blanco")!important;
+                color: map.get($colores, "blanco") !important;
                 font-family: $fuenteprincipal;
                 &:hover {
                     color: map.get($colores, "verde") !important;

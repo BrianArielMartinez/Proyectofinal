@@ -1,15 +1,15 @@
 @use "sass:map";
+@import "base/variables";
+@import "base/mixins";
 @import "components/header";
 @import "components/footer";
 @import "components/content";
-@import "base/variables";
-@import "base/mixins";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 /* ESTILOS GENERALES */
 
@@ -59,10 +59,6 @@ i {
     padding-right: 10px;
 }
 
-hr {
-    display: none;
-}
-
 .background-1 {
     background-image: url("../Images/background-black.jpg");
 }
@@ -81,7 +77,7 @@ hr {
 }
 
 .boton {
-    background-image: linear-gradient(to right, #1CD8D2 0%, #93EDC7 51%, #1CD8D2 100%);
+    background-image: linear-gradient(to right, #1cd8d2 0%, #93edc7 51%, #1cd8d2 100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
@@ -158,12 +154,12 @@ hr {
     text-decoration: none;
     align-items: flex-end;
     display: flex;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     a {
         img {
             filter: invert(1);
             width: 100px;
-            transition: all .2s ease-in-out;
+            transition: all 0.2s ease-in-out;
             &:hover {
                 transform: rotate(45deg);
             }
@@ -177,17 +173,16 @@ hr {
     padding: 64px 0 64px 32px;
 }
 
-
 /* FUENTES */
 
 @font-face {
     font-family: $fuenteprincipal;
-    src: url('../Fuentes/HelveticaNowDisplay-Regular.ttf') format('truetype');
+    src: url("../Fuentes/HelveticaNowDisplay-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Ortica";
-    src: url('../Fuentes/Ortica-Light.otf') format('opentype');
+    src: url("../Fuentes/Ortica-Light.otf") format("opentype");
 }
 
 @import "components/mediaquery";
