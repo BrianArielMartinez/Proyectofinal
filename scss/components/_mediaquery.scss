@@ -3,7 +3,7 @@
 // XXL
 
 @media only screen and (min-width: 1400px) {
-    .container{
+    .container {
         max-width: 100%;
     }
 }
@@ -73,9 +73,7 @@
             margin-top: 35px;
             text-align: left !important;
         }
-        .FotoInicio img {
-            width: 150px;
-        }
+
         .destacado2 {
             font-size: 2.5em;
         }
@@ -132,6 +130,9 @@
             font-size: 1.2em;
         }
     }
+    .arrow-icon {
+        padding-left: 100px;
+    }
     .section-1 {
         padding-top: 3em;
         flex-direction: column;
@@ -144,7 +145,7 @@
         font-size: 1.5em;
     }
     .tarjeta {
-        min-width: 18em  !important;
+        min-width: 18em !important;
     }
     .span-min {
         width: 100%;

@@ -152,7 +152,8 @@ i {
     flex-direction: column;
     justify-content: flex-start;
     text-decoration: none;
-    align-items: flex-end;
+    align-items: flex-start;
+    padding-left: 200px;
     display: flex;
     transition: all 0.2s ease-in-out;
     a {

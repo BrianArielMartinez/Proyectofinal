@@ -27,6 +27,13 @@ header {
             li {
                 color: map.get($colores, "blanco");
             }
+            ul {
+            a {
+                &:hover {
+                    background-color: black !important;
+                }
+            }
+            }
             a {
                 color: map.get($colores, "blanco") !important;
                 font-family: $fuenteprincipal;

@@ -42,6 +42,7 @@ main {
             width: 75%;
             height: 100px;
             background-color: transparent;
+            color: map.get($colores, "blanco");
             border: none;
             border-bottom: 2px solid white;
             font-size: 32px;
