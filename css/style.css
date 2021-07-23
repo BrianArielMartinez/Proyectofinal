@@ -554,6 +554,9 @@ i {
   .arrow-icon {
     padding-left: 100px;
   }
+  .arrow-icon a img {
+    width: 60px;
+  }
 
   .section-1 {
     padding-top: 3em;
